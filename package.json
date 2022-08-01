@@ -1,5 +1,5 @@
 {
-  "name": "monaco-jsonforms",
+  "name": "@fusebit-int/monaco-jsonforms",
   "version": "1.0.0",
   "private": true,
   "main": "dist/cjs/index.js",
