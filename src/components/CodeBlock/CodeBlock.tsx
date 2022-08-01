@@ -43,12 +43,7 @@ interface Props {
 const LINE_HEIGHT = 20;
 const DEFAULT_EDITOR_HEIGHT = 290;
 
-const CodeBlockEditor = ({
-  defaultValue,
-  onChange,
-  label,
-  isExpandable,
-}: Props) => {
+const CodeBlock = ({ defaultValue, onChange, label, isExpandable }: Props) => {
   const editorRef = useRef<any>(null);
   const [editorHeight, setEditorHeight] = useState(DEFAULT_EDITOR_HEIGHT);
 
@@ -93,4 +88,4 @@ const CodeBlockEditor = ({
   );
 };
 
-export default CodeBlockEditor;
+export default CodeBlock;
