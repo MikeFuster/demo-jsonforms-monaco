@@ -9,7 +9,7 @@ const packageJson = require("./package.json");
 
 export default [
   {
-    external: ["react"],
+    external: ["react", "@jsonforms/react", "@jsonforms/core"],
     input: "src/index.ts",
     output: [
       {
@@ -19,6 +19,8 @@ export default [
         sourcemap: true,
         globals: {
           react: "React",
+          "@jsonforms/react": 'react',
+          "@jsonforms/core": 'core'
         },
       },
       {
