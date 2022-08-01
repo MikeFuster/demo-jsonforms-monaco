@@ -19,7 +19,9 @@
     "typescript": "^4.7.4"
   },
   "peerDependencies": {
-    "react": "^17.0.1"
+    "react": "^17.0.1",
+    "@jsonforms/core": "^2.5.2",
+    "@jsonforms/react": "^2.5.2"
   },
   "scripts": {
     "rollup": "rollup -c"

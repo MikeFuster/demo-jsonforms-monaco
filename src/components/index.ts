@@ -1,3 +1,6 @@
 import CodeBlock from "./CodeBlock";
+import CodeBlockControl, {
+  CodeBlockControlTester,
+} from "./CodeBlockControl/CodeBlockControl";
 
-export { CodeBlock };
+export { CodeBlock, CodeBlockControl, CodeBlockControlTester };
