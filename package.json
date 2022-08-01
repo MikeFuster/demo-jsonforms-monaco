@@ -1,7 +1,7 @@
 {
-  "name": "@fusebit-int/monaco-jsonforms",
+  "name": "@fusebit/monaco-jsonforms",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "devDependencies": {
