@@ -25,6 +25,9 @@ export default [
         sourcemap: true,
         globals: {
           react: "React",
+          "@jsonforms/core": "jsonformsCore",
+          "@jsonforms/react": "jsonformsReact",
+          "@jsonforms/material-renderers": "jsonformsMaterialRenderers",
         },
       },
       {
