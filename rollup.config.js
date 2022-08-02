@@ -4,12 +4,18 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import { terser } from "rollup-plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import json from "@rollup/plugin-json";
 
 const packageJson = require("./package.json");
 
 export default [
   {
-    external: ["react", "@jsonforms/react", "@jsonforms/core"],
+    external: [
+      "react",
+      "@jsonforms/core",
+      "@jsonforms/react",
+      "@jsonforms/material-renderers",
+    ],
     input: "src/index.ts",
     output: [
       {
@@ -19,8 +25,6 @@ export default [
         sourcemap: true,
         globals: {
           react: "React",
-          "@jsonforms/react": 'react',
-          "@jsonforms/core": 'core'
         },
       },
       {
@@ -32,6 +36,7 @@ export default [
     plugins: [
       peerDepsExternal(),
       resolve({ browser: "true" }),
+      json(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       terser(),
